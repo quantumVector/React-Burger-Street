@@ -1,38 +1,310 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: 'Manrope';
+  src: url('./assets/fonts/Manrope-Bold.eot');
+  src: local('Manrope Bold'), local('Manrope-Bold'), url('./assets/fonts/Manrope-Bold.eot?#iefix') format('embedded-opentype'), url('./assets/fonts/Manrope-Bold.woff2') format('woff2'), url('./assets/fonts/Manrope-Bold.woff') format('woff'), url('./assets/fonts/Manrope-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+  font-family: 'Manrope';
+  src: url('./assets/fonts/Manrope-Semibold.eot');
+  src: local('Manrope Semibold'), local('Manrope-Semibold'), url('./assets/fonts/Manrope-Semibold.eot?#iefix') format('embedded-opentype'), url('./assets/fonts/Manrope-Semibold.woff2') format('woff2'), url('./assets/fonts/Manrope-Semibold.woff') format('woff'), url('./assets/fonts/Manrope-Semibold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@font-face {
+  font-family: 'Manrope';
+  src: url('./assets/fonts/Manrope-Regular.eot');
+  src: local('Manrope Regular'), local('Manrope-Regular'), url('./assets/fonts/Manrope-Regular.eot?#iefix') format('embedded-opentype'), url('./assets/fonts/Manrope-Regular.woff2') format('woff2'), url('./assets/fonts/Manrope-Regular.woff') format('woff'), url('./assets/fonts/Manrope-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+@font-face {
+  font-family: 'Manrope';
+  src: url('./assets/fonts/Manrope-Light.eot');
+  src: local('Manrope Light'), local('Manrope-Light'), url('./assets/fonts/Manrope-Light.eot?#iefix') format('embedded-opentype'), url('./assets/fonts/Manrope-Light.woff2') format('woff2'), url('./assets/fonts/Manrope-Light.woff') format('woff'), url('./assets/fonts/Manrope-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Manrope';
+  src: url('./assets/fonts/Manrope-Thin.eot');
+  src: local('Manrope Thin'), local('Manrope-Thin'), url('./assets/fonts/Manrope-Thin.eot?#iefix') format('embedded-opentype'), url('./assets/fonts/Manrope-Thin.woff2') format('woff2'), url('./assets/fonts/Manrope-Thin.woff') format('woff'), url('./assets/fonts/Manrope-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Manrope';
+  src: url('./assets/fonts/Manrope-Medium.eot');
+  src: local('Manrope Medium'), local('Manrope-Medium'), url('./assets/fonts/Manrope-Medium.eot?#iefix') format('embedded-opentype'), url('./assets/fonts/Manrope-Medium.woff2') format('woff2'), url('./assets/fonts/Manrope-Medium.woff') format('woff'), url('./assets/fonts/Manrope-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Manrope';
+  src: url('./assets/fonts/Manrope-ExtraBold.eot');
+  src: local('Manrope ExtraBold'), local('Manrope-ExtraBold'), url('./assets/fonts/Manrope-ExtraBold.eot?#iefix') format('embedded-opentype'), url('./assets/fonts/Manrope-ExtraBold.woff2') format('woff2'), url('./assets/fonts/Manrope-ExtraBold.woff') format('woff'), url('./assets/fonts/Manrope-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  background-color: #000;
+  font-family: 'Manrope';
+}
+
+.app-wrapper {
+  width: 1366px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  background-color: #000;
+  height: 137px;
+}
+
+.logo-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 380px;
+  height: 30px;
+}
+
+.logo {
+  width: 70px;
+}
+
+.logo-title {
+  font-size: 24px;
+  font-weight: 900;
+  color: #fece00;
+}
+
+.tagline {
+  font-size: 16px;
+  font-weight: 300;
+  color: #fece00;
+}
+
+.basket {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  width: 110px;
+  background-color: #fece00;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.basket:hover {
+  background-color: #FE5F1E;
+}
+
+.total {
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.separator {
+  border-left: 2px solid rgba(255, 255, 255, 0.5);
+  width: 2px;
+  height: 30px;
+}
+
+.icon {
+  width: 20px;
+}
+
+.basket-num {
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.content {
+  margin-bottom: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.top-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.category {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+  width: 800px;
+}
+
+.category-item {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 30px;
+  background-color: #fece00;
+  cursor: pointer;
+}
+
+.category-item:hover {
+  color: #fff;
+  background-color: #FE5F1E;
+}
+
+.category .active {
+  color: #fff;
+  background-color: #000;
+}
+
+.filter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 40px;
+}
+
+.arrow {
+  margin-right: 10px;
+}
+
+.filter-text {
+  font-size: 14px;
+  font-weight: 900;
+  margin-right: 10px;
+}
+
+.filter-btn {
+  font-size: 14px;
+  font-weight: 500;
+  color: #fece00;
+  cursor: pointer;
+}
+
+.filter-btn:hover {
+  color: #FE5F1E;
+}
+
+.items {
+  padding: 0 40px;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: 900;
+}
+
+.items-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+.item {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 60px;
+}
+
+.item-img {
+  width: 280px;
+  height: 280px;
+}
+
+.item-title {
+  font-size: 20px;
+  font-weight: 900;
+  text-align: center;
+}
+
+.settings {
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 5px;
+  width: 280px;
+  background-color: #fecf0080;
+  border-radius: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.settings-item {
+  margin: 5px 5px;
+  padding: 5px 10px;
+  font-size: 14px;
+  background-color: #fff;
+  border-radius: 10px;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.settings-item:hover {
+  color: #fff;
+  background-color: #FE5F1E;
+}
+
+.settings .active {
+  color: #fff;
+  background-color: #000;
+}
+
+.purchase {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+  width: 280px;
+}
+
+.price {
+  font-size: 22px;
+  font-weight: 900;
+}
+
+.btn-add {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+  width: 140px;
+  font-size: 16px;
+  font-weight: 900;
+  color: #FE5F1E;
+  border: 2px solid #FE5F1E;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.btn-add:hover {
+  color: #fff;
+  background-color: #FE5F1E;
+}
+
+.plus {
+  font-size: 24px;
+}
+
+.num {
+  padding: 2px 9px;
+  font-size: 14px;
+  color: #fff;
+  background-color: #FE5F1E;
+  border-radius: 80px;
 }
