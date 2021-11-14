@@ -1,0 +1,15 @@
+.menu {
+  flex: 1;
+  text-align: end;
+}
+
+.menuItem {
+  margin-right: 50px;
+  font-size: 18px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.menuItem:hover {
+  color: #e6081d;
+}
