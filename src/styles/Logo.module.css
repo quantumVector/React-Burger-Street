@@ -10,21 +10,21 @@
   justify-content: center;
   align-items: center;
   margin-bottom: 5px;
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   border: 7px solid #fff;
   border-radius: 50%;
 }
 
 .abbr {
-  font-size: 43px;
+  font-size: 35px;
   font-weight: bold;
   color: #fff;
   user-select: none;
 }
 
 .logoText {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: bold;
   text-transform: uppercase;
   color: #fff;

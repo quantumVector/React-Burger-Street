@@ -1,0 +1,39 @@
+.info {
+  display: flex;
+  margin-left: 10px;
+  height: 65px;
+}
+
+.item {
+  display: flex;
+  margin-left: 15px;
+  padding: 0 20px;
+  border-left: 1px solid #e6081d;
+}
+
+.item:last-child {
+  padding-right: 0;
+}
+
+.wrap {
+  margin-left: 10px;
+}
+
+.title, .phone {
+  font-size: 18px;
+  color: #fff;
+}
+
+.hours {
+  font-size: 16px;
+  color: #767674;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+}
+
+.contact {
+  color: #e6081d;
+}
