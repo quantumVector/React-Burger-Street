@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Montserrat:wght@900&display=swap');
+
+.content {
+  display: flex;
+}
+
+.info {
+  padding: 50px 0;
+  width: 43%;
+}
+
+.title {
+  font-size: 75px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  color: #fff;
+}
+
+.discription {
+  padding: 20px 0;
+  font-size: 16px;
+  color: #767674;
+}
+
+.btnWrap {
+  display: flex;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  margin-right: 15px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 40px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.btnCart {
+  background-color: #e6081d;
+}
+
+.btnMenu {
+  border: 1px solid #fff;
+}
+
+.btnMenu:hover {
+  border: 1px solid #e6081d;
+  color: #e6081d;
+}
+
+.iconArrow {
+  margin-left: 10px;
+  width: 30px;
+  height: 30px;
+  background: url('../assets/arrow-right.png') no-repeat;
+  background-size: cover;
+}
+
+.btnMenu:hover .iconArrow {
+  background: url('../assets/arrow-right-red.png') no-repeat;
+  background-size: cover;
+}
+
+.btnIcon {
+  margin-left: 15px;
+  width: 35px;
+}
+
+.presentation {
+  position: relative;
+  width: 57%;
+  height: 470px;
+  background: url('../assets/burger3.png') no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.price {
+  position: absolute;
+  top: 10px;
+  left: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 30px;
+  font-size: 19px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #e6081d;
+  border-radius: 13px;
+}
+
+.new {
+  position: absolute;
+  top: 230px;
+  left: 570px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  font-size: 19px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #f4830a;
+  border-radius: 50%;
+}
+
+.scrolling {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.btnScroll {
+  padding-bottom: 5px;
+  margin-right: 20px;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.btnPrev {
+  background: url('../assets/arrow-left.png') no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.btnPrev:hover {
+  background: url('../assets/arrow-left-red.png') no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.btnNext {
+  background: url('../assets/arrow-right.png') no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.btnNext:hover {
+  background: url('../assets/arrow-right-red.png') no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.currentItem {
+  font-size: 50px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.totalItems {
+  padding-bottom: 10px;
+  font-size: 30px;
+  font-weight: bold;
+  color: #e6081d;
+}
